@@ -22,8 +22,29 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SRU-COOP'),
+        title: Text(
+          'SRU-COOP',
+          style: TextStyle(color: Colors.black),
+        ),
         backgroundColor: Colors.amber,
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            Row(
+              children: [Icon(Icons.home), Text('Home')],
+            ),
+            Row(
+              children: [Icon(Icons.ac_unit_rounded), Text('About')],
+            ),
+            Row(
+              children: [Icon(Icons.room_service), Text('Services')],
+            ),
+            Row(
+              children: [Icon(Icons.contact_mail_rounded), Text('Contact')],
+            )
+          ],
+        ),
       ),
       body: SafeArea(
         child: Center(
