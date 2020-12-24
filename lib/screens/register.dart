@@ -18,14 +18,30 @@ class _RegisterState extends State<Register> {
     );
   }
 
+  Widget nameText() {
+    return TextFormField();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Register'),
-        backgroundColor: Colors.amber,
-      ),
-      body: Text('bosy'),
-    );
+        appBar: AppBar(
+          title: Text('Register'),
+          actions: [registerButton()],
+          backgroundColor: Colors.amber,
+        ),
+        body: ListView(
+          padding: EdgeInsets.all(30.0),
+          children: [
+            Column(
+              children: [nameText()],
+            ),
+            Column(
+              children: [nameText()],
+            ),
+            nameText(),
+            nameText(),
+          ],
+        ));
   }
 }

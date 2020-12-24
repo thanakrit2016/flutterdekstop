@@ -66,6 +66,7 @@ flutter:
     - family: Mali
       fonts:
         - asset: fonts/Mali-Regular.ttf
+          weight: 800
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

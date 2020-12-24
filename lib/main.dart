@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterdekstop/screens/home.dart';
+import 'package:flutterdekstop/screens/home_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,8 +11,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'SRU_COOP',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: Home(),
+      theme: ThemeData(
+          primarySwatch: Colors.blue,
+          textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Mali')),
+      home: HomeView(),
     );
   }
 }

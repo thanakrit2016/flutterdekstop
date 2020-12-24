@@ -74,47 +74,50 @@ class _HomeState extends State<Home> {
         ),
         backgroundColor: Colors.amber,
       ),
-      drawer: Drawer(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Icon(Icons.home),
-                SizedBox(
-                  width: 10,
-                ),
-                Text('Home')
-              ],
-            ),
-            Row(
-              children: [
-                Icon(Icons.ac_unit_rounded),
-                SizedBox(
-                  width: 10,
-                ),
-                Text('About')
-              ],
-            ),
-            Row(
-              children: [
-                Icon(Icons.room_service),
-                SizedBox(
-                  width: 10,
-                ),
-                Text('Services')
-              ],
-            ),
-            Row(
-              children: [
-                Icon(Icons.contact_mail_rounded),
-                SizedBox(
-                  width: 10,
-                ),
-                Text('Contact')
-              ],
-            )
-          ],
+      drawer: Padding(
+        padding: const EdgeInsets.fromLTRB(0.0, 55.0, 0.0, 0.0),
+        child: Drawer(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Icon(Icons.home),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text('Home')
+                ],
+              ),
+              Row(
+                children: [
+                  Icon(Icons.ac_unit_rounded),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text('About')
+                ],
+              ),
+              Row(
+                children: [
+                  Icon(Icons.room_service),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text('Servicesggggggggggggggggggggggggg')
+                ],
+              ),
+              Row(
+                children: [
+                  Icon(Icons.contact_mail_rounded),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text('Contact')
+                ],
+              )
+            ],
+          ),
         ),
       ),
       body: SafeArea(
